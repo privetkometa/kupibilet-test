@@ -1,0 +1,31 @@
+{
+  "name": "myriad-font",
+  "description": "Myriad web fonts.",
+  "main": [
+    "fonts/myriad/myriad-set-pro_bold.woff"
+  ],
+  "authors": [
+    "Krisan Alfa Timur"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "myriad",
+    "font",
+    "webfont"
+  ],
+  "homepage": "https://github.com/krisanalfa/myriad-font",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "gulpfile.js",
+    "test",
+    "tests",
+    "img",
+    "index.html"
+  ]
+}

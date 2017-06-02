@@ -11,6 +11,11 @@
     "bower_components",
     "build/bower"
   ],
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "source-sans-pro": "^1.0.0",
+    "normalize-less": "*",
+    "myriad-font": "^0.0.2"
   }
 }

@@ -9,7 +9,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "main-bower-files": "^2.13.1",
+    "path": "^0.12.7"
   },
-  "dependencies": {
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/privetkometa/kupibilet-test.git"
   }
 }
