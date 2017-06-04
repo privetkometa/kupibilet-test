@@ -1,10 +1,13 @@
+/* BEGIN increment function on index.html */
 $('#increment').click(function(){
 	var count = $('.sidebar__count-text span').text();
 	count ++;
 	$('.sidebar__count-text span').text(count);
 	return false;
 });
+/* END increment function on index.html */
 
+/* BEGIN mobile-menu function*/
 $('#mobile-sidebar').click(function(){
 	if($(this).is('.open')){
 		$(this).removeClass('open');
@@ -16,3 +19,20 @@ $('#mobile-sidebar').click(function(){
 	}
 	return false;
 });
+/* END mobile-menu function */
+
+
+/* BEGIN modal window function*/
+$('#modal-start').click(function(){
+	if(!$('.modal').is('.open')){
+		$('.modal').addClass('open').fadeIn();
+		$('body').css('overflow','hidden');
+	}
+	return false;
+});
+$('.modal__close').click(function(){
+	$('.modal').removeClass('open').fadeOut();
+	$('body').css('overflow','auto');
+	return false;
+});
+/* END modal window function */

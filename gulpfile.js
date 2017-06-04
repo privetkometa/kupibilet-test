@@ -35,10 +35,10 @@ gulp.task('bowerless', function () {
 });
 
 //font connect
-gulp.task('bowerfont', function () {
-  return gulp.src(mainBowerFiles('**/*.{ttf,woff,woff2}'))
-  .pipe(gulp.dest('src/fonts'))
-});
+//gulp.task('bowerfont', function () {
+  //return gulp.src(mainBowerFiles('**/*.{ttf,woff,woff2}'))
+  //.pipe(gulp.dest('src/fonts'))
+//});
 
 
 //css
@@ -81,7 +81,7 @@ gulp.task('watch', function(){
 });
 
 // bower includes
-gulp.task('bower', ['bowerjs', 'bowerless', 'bowerfont']);
+gulp.task('bower', ['bowerjs', 'bowerless']);
 
 //default
 gulp.task('default', ['connect', 'watch', 'html', 'css', 'js']);
