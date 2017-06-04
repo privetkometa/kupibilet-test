@@ -128,11 +128,26 @@ img{
 		overflow: hidden;
 	}
 }
+
+/*---------------------------------------------------------------------
+MAP
+-----------------------------------------------------------------------*/
+
 .map{
 	width: ~"calc(100% - 405px)";
 	display: inline-block;
 	vertical-align: top;
 	height: 100%;
+	&__dark-bg{
+		left: 100%;
+		position: absolute;
+		opacity: 0;
+		transition: all 0.5s;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.4);
+	}
 	@media(max-width:991px){
 		width: ~"calc(100% - 345px)";
 	}
@@ -146,6 +161,13 @@ img{
 	@media(max-width:545px){
 		&.open{
 			width: ~"calc(100% - 280px)";
+			position: relative;
+			z-index: 30;
+			.map__dark-bg{
+				opacity: 1;
+				left: 0;
+				z-index: 30;
+			}
 		}
 	}
 }
@@ -218,6 +240,7 @@ img{
 	}
 	@media(max-width:767px){
 		position: fixed;
+		background: #fff;
 		right: -350px;
 		top: 45px;
 		transition: right 0.5s;
